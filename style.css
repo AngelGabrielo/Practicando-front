@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.title{
+    width: 100%;
+}
+
+.title__h1{
+    background: rgb(101, 111, 243);
+    text-align: center;
+    padding: 1em;
+    font-family: 'Rubik Vinyl';
+    margin: 0;
+    box-shadow: 0 0 20px 3px black;
+    text-shadow: 0 0 14px white;
+}
+
+.title__h1:hover{
+    background: black;
+    color: white;
+    transition: all 2s;
+}
+
+.main{
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 0 0 0;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.section{
+    max-width: 500px;
+}
+
+.section__p{
+    text-align: justify;
+}
+
+.footer{
+    background: #111;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    align-self: flex-end;
+}
+
+.section__p-img{
+    float: left;
+    width: 200px;
+    margin: 0 10px 5px 0;
+}
