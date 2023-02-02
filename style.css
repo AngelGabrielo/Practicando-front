@@ -6,20 +6,19 @@ body{
 }
 
 .title{
+    display: flex;
+    align-items: center;
     width: 100%;
-}
-
-.title__h1{
+    height: 130px;
     background: rgb(101, 111, 243);
-    text-align: center;
-    padding: 1em;
     font-family: 'Rubik Vinyl';
     margin: 0;
     box-shadow: 0 0 20px 3px black;
     text-shadow: 0 0 14px white;
 }
 
-.title__h1:hover{
+
+.title:hover{
     background: black;
     color: white;
     transition: all 2s;
@@ -58,4 +57,48 @@ body{
     float: left;
     width: 200px;
     margin: 0 10px 5px 0;
+}
+
+.fa-solid{
+    margin: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.content-menu{
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0 0 20px 3px black;
+    width: 400px;
+    height: 100vh;
+    position: absolute;
+    left: -600px;
+    top: 0;
+    transition: all .5s ease;
+}
+
+.content-menu__ul{
+    padding: 100px 0 20px 0;
+    list-style: none;
+}
+
+.content-menu__ul li{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.content-menu__ul li:hover{
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+.active{
+    transform: translate(600px);
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
 }
