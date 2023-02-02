@@ -1,61 +1,51 @@
-body{
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    justify-content: center;
-}
-
-.title{
-    width: 100%;
-}
-
-.title__h1{
-    background: rgb(101, 111, 243);
-    text-align: center;
-    padding: 1em;
-    font-family: 'Rubik Vinyl';
+*{
     margin: 0;
-    box-shadow: 0 0 20px 3px black;
-    text-shadow: 0 0 14px white;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.title__h1:hover{
-    background: black;
-    color: white;
-    transition: all 2s;
-}
-
-.main{
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
-    width: 80%;
+.encabezado{
+    background-color: burlywood;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 80px 0 0 0;
-    font-size: 1em;
-    font-family: sans-serif;
-}
+    justify-content: space-around;
+    align-items: center;
 
-.section{
-    max-width: 500px;
 }
-
-.section__p{
-    text-align: justify;
+.imagen{
+    width: 100px;
+    height: 100px;
 }
-
-.footer{
-    background: #111;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 2em;
-    align-self: flex-end;
+.navegacion{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    align-items: center;
 }
+.icono{
+    font-size: 20px;
+    background-color: rgb(226, 235, 230);
+    padding: 12px;
+    border-radius: 50%;
+}
+.contenedor-principal{
+    background-color: rgb(0, 200, 134);
+   
+  
+}
+.imagen-anime{
+    width: 250px;
+    height: 200px;
+}
+.aside-derecho{
 
-.section__p-img{
-    float: left;
-    width: 200px;
-    margin: 0 10px 5px 0;
+   
+    background-color: rgb(171, 171, 22);
+}
+.contenedor-centrado{
+    background-color: rgb(35, 119, 198);
+    display: flex;
+    max-width: 1500px;
+    min-width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+
 }
